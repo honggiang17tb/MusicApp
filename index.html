@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://icons-for-free.com/iconfiles/png/512/music-131964753036631366.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="player row">
+        <div class="navigation col-12 col-md-2 d-none d-md-block">
+            <div class="userInfo">
+                <img class="user_avt" src="https://picsum.photos/seed/picsum/100/100" alt="">
+                <h5 class="user_name">Hong Giang</h5>
+                <span class="user_phone">0915095283</span>
+            </div>
+            <div class="nav">
+                <div class="btn btn-home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="btn btn-music">
+                    <i class="fas fa-music"></i>
+                    <span>Music</span>
+                </div>
+                <div class="btn btn-player active">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Player</span>
+                </div>
+                <div class="btn btn-search">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </div>
+                <div class="btn btn-user">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>User</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main col-12 col-md-10">
+            <div class="row ">
+                <div class="main_top">
+                    <div class="logo d-block d-md-none">
+                        <a href=""><img
+                            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"alt="" /></a>
+                    </div>
+                    <div class="menu d-block d-md-none">
+                        <i class="fa fa-bars menu_icon icon_menu" aria-hidden="true"></i>
+                        <i class="fa fa-times menu_icon icon_exit" aria-hidden="true"></i>
+                        <div class="box_out" style="right: -100%;">
+                            <div class="mode2">
+                                <div>
+                                    <i class="fas fa-moon"></i>
+                                </div>
+                                <div>
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <input type="checkbox" id="toggle_checkbox2" hidden>
+                                <label class="toggle_checkbox2" for="toggle_checkbox2"></label>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="box_search d-none d-md-flex">
+                        <div>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input class="search" type="search" placeholder="Search for song, artists etc...">
+                        <span class="microphone">
+                            <i class="fas fa-microphone"></i>
+                            <span class="recording-icon"></span>
+                        </span>
+                    </div>
+                    <div class="setting d-none d-md-flex">
+                            <div class="btn btn-notice">
+                                <i class="far fa-bell"></i>
+                            </div>
+                            <div class="btn btn-setting">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="mode">
+                                <div>
+                                    <i class="fas fa-moon"></i>
+                                </div>
+                                <div>
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <input type="checkbox" id="toggle_checkbox" hidden>
+                                <label class="toggle_checkbox" for="toggle_checkbox"></label>
+                            </div>
+                    </div>
+                </div>
+                <div class="topchart d-none d-md-block">
+                    <h5>Top</h5>
+                    <div class="topchart_body">
+                        <div class="card_item top top1">
+                            <img class="card_img"
+                                src="https://avatar-ex-swe.nixcdn.com/song/2018/09/20/2/c/a/3/1537413925557_500.jpg">
+                            <div class="card_body">
+                                <h6 class="card_title">Name</h6>
+                                <span class="card_text">Singer</span>
+                            </div>
+                        </div>
+                        <div class="card_item top top2">
+                            <img class="card_img" src="https://picsum.photos/seed/picsum/185/200">
+                            <div class="card_body">
+                                <h6 class="card_title">Name</h6>
+                                <span class="card_text">Singer</span>
+                            </div>
+                        </div>
+                        <div class="card_item top top3">
+                            <img class="card_img" src="https://picsum.photos/seed/picsum/185/200">
+                            <div class="card_body">
+                                <h6 class="card_title">Name</h6>
+                                <span class="card_text">Singer</span>
+                            </div>
+                        </div>
+                        <div class="card_item top top4">
+                            <img class="card_img" src="https://picsum.photos/seed/picsum/185/200">
+                            <div class="card_body">
+                                <h6 class="card_title">Name</h6>
+                                <span class="card_text">Singer</span>
+                            </div>
+                        </div>
+                        <div class="card_item top top5">
+                            <img class="card_img" src="https://picsum.photos/seed/picsum/185/200">
+                            <div class="card_body">
+                                <h6 class="card_title">Name</h6>
+                                <span class="card_text">Singer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-nowrap rp">
+                <!-- Playlist -->
+                <div class="col-12 col-sm-12 col-md-7 p_0 rp2">
+                    <h5 class="m-0 rp_off">Playlist</h5>
+                    <span class="song_count rp_off" style="font-size: 12px;">Không tìm thấy bài hát</span>
+                    <div class="playlist"></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 p_0 rp1">
+                    <h5 class="m-0 rp_off">Now playing</h5>
+                    <span style="font-size: 12px;" class="rp_off">Hello Everyone</span>
+                    <div class="box_music">
+                        <!-- Dashboard -->
+                        <div class="dashboard">
+                            <!-- CD -->
+                            <div class="cd">
+                                <div class="cd-thumb"
+                                    style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                                    <div class="cd_aim"></div>
+                                </div>
+                            </div>
+                            <!-- Header -->
+                            <header>
+                                <h2 class="mb-0">Music</h2>
+                                <p class="m-0">Singer</p>
+                            </header>
+
+                            <div class="process">
+                                <input id="progress" class="progress" type="range" value="0" step="0.5" min="0"
+                                    max="100">
+                            </div>
+                            <div class="d-flex align-items-center py-1">
+                                <div class="vol">
+                                    <div class="btn-volume">
+                                        <i class="fas fa-volume-up"></i>
+                                        <i class="fas fa-volume-mute"></i>
+                                    </div>
+                                    <input id="volume" class="volume" type="range" value="0" step="0.5" min="0"
+                                        max="100">
+                                </div>
+                                <div class="timeline">
+                                    <div class="time-count"></div>
+                                    <span>/</span>
+                                    <div class="time-duration"></div>
+                                </div>
+                            </div>
+
+                            <!-- Control -->
+                            <div class="control">
+                                <div class="btn btn-repeat">
+                                    <i class="fas fa-redo"></i>
+                                </div>
+                                <div class="btn btn-prev">
+                                    <i class="fas fa-step-backward"></i>
+                                </div>
+                                <div class="btn btn-toggle-play">
+                                    <i class="fas fa-pause icon-pause"></i>
+                                    <i class="fas fa-play icon-play"></i>
+                                </div>
+                                <div class="btn btn-next">
+                                    <i class="fas fa-step-forward"></i>
+                                </div>
+                                <div class="btn btn-random">
+                                    <i class="fas fa-random"></i>
+                                </div>
+                            </div>
+                            <audio id="audio" src=""></audio>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,96 @@
+@media only screen and (max-width: 766px) {
+    .rp{
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 40px;
+    }
+    .rp1{
+      position: fixed;
+      top: 62px;
+    }
+    .rp2{
+      position: absolute;
+      top: 375px;
+    }
+    .rp_off{
+      display: none;
+    }
+    .p_0{
+      padding: 0;
+    }
+    .dashboard{
+      width: 100%;
+    }
+    .setting{
+      margin-right: 28px;
+    }
+    .player{
+      position: relative;
+    }
+    .navigation{
+      display: flex !important;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      height: 56px;
+      overflow: hidden;
+      align-items: center;
+    }
+    .userInfo{
+      display: none;
+    }
+    .nav{
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .nav span{
+      display: none;
+    }
+    .main_top{
+      position: fixed;
+      z-index: 99;
+      background-color: #fff;
+    }
+    .playlist{
+      height: auto;
+    }
+    .box_out{
+      position: absolute;
+      top: 60px;
+      width: 15vw;
+      height: 25vh;
+      transition: 0.6s ease-out;
+    }
+    .menu .icon_exit{
+      display: none;
+    }
+    .menu.active .icon_exit{
+      display: block;
+    }
+    .menu.active .icon_menu{
+      display: none;
+    }
+    .player.nightMode .main .box_music .dashboard {
+     background-color: initial;
+    }
+    .player.nightMode .main .box_music .dashboard header h2{
+      color: inherit;
+    }
+    .player.nightMode .main .playlist .song .author{
+      color: inherit;
+    }
+    .player.nightMode .main_top{
+      background-color: #808080;
+    }
+
+  }
+
+  @media only screen and (width: 540px) {
+    .cd-thumb {
+      width: 36%;
+      padding-top: 36%;
+    }
+  }
